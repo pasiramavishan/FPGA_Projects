@@ -1,0 +1,13 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/CLK/CLK.gen/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd,1719551791,vhdl,,,,c_addsub_0,,,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/CLK/CLK.gen/sources_1/ip/div_gen_0/sim/div_gen_0.vhd,1719561955,vhdl,,,,div_gen_0,,,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/CLK/CLK.gen/sources_1/ip/div_gen_1/sim/div_gen_1.vhd,1719554511,vhdl,,,,div_gen_1,,,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/CLK/CLK.gen/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd,1719553945,vhdl,,,,mult_gen_0,,,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/CLK/CLK.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/CLK/CLK.srcs/sim_1/new/alu_tb.sv,1719566207,systemVerilog,,C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/CLK/CLK.srcs/sources_1/new/counter.sv,,alu_ip_tb,,uvm,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/CLK/CLK.srcs/sim_1/new/counter_tb.sv,1719545885,systemVerilog,,,,counter_tb,,uvm,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/CLK/CLK.srcs/sources_1/new/alu.sv,1719565428,systemVerilog,,C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/CLK/CLK.srcs/sim_1/new/alu_tb.sv,,alu_ip,,uvm,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/CLK/CLK.srcs/sources_1/new/counter.sv,1719545464,systemVerilog,,C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/CLK/CLK.srcs/sim_1/new/counter_tb.sv,,counter,,uvm,,,,,,

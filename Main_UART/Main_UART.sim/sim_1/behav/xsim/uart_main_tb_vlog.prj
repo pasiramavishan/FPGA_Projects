@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../../Github/AnalogComputer/UART/uart_main.sv" \
+"../../../../../../Github/AnalogComputer/UART/uart_rx.sv" \
+"../../../../../../Github/AnalogComputer/UART/uart_tx.sv" \
+"../../../../../../Github/AnalogComputer/UART/uart_main_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,11 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/UART/Src/uart_rx.sv,1719754205,systemVerilog,,C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/UART/Src/uart_with_rx_parity_tb.sv,,uart_rx,,uvm,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/UART/Src/uart_rx_tb.sv,1719753946,systemVerilog,,,,uart_rx_tb,,uvm,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/UART/Src/uart_tx.sv,1719760145,systemVerilog,,C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/UART/Src/uart_tx_tb.sv,,uart_tx,,uvm,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/UART/Src/uart_tx_tb.sv,1719730746,systemVerilog,,,,uart_tx_tb,,uvm,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/UART/Src/uart_with_rx_parity.sv,1719759495,systemVerilog,,C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/UART/Src/uart_with_rx_parity_tb.sv,,uart_with_rx_parity,,uvm,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/UART/Src/uart_with_rx_parity_tb.sv,1719759710,systemVerilog,,,,uart_with_rx_parity_tb,,uvm,,,,,,
+C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/UART/UART.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,uvm,,,,,,
