@@ -1,7 +1,0 @@
-Running: xsim.dir/uart_with_rx_parity_tb_behav/xsimk.exe -simmode gui -wdb uart_with_rx_parity_tb_behav.wdb -simrunnum 0 -socket 53494
-Design successfully loaded
-Design Loading Memory Usage: 8344 KB (Peak: 8344 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 16972 KB (Peak: 16972 KB)
-Simulation CPU Usage: 359 ms

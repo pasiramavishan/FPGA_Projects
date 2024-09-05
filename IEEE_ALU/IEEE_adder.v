@@ -3,12 +3,13 @@ module IEEE_adder (number1, number2, op, result);
     input op;
     output [31:0] result;
 
-    wire [7:0] exponentDifference;
+    wire signed [7:0] exponentDifference;
+    reg [7:0] exponent;
     wire [23:0] intermediate, reg3;
     reg sign;
-    wire [4:0] incr;
+    wire [7:0] incr;
     reg [23:0] reg1, reg2; 
-    wire cout;
+    wire cout, cout1;
     wire op_;
 
     assign op_ = op ^ number1[31] ^ number2[31];
@@ -17,33 +18,55 @@ module IEEE_adder (number1, number2, op, result);
             .reg1(number1[30:23]),
             .reg2(number2[30:23]),
             .result(exponentDifference),
-            .cout(cout)
+            .cout(cout1)
         );
-        always @(*) begin
-    if (op_) begin
-        if (exponentDifference>0) begin
-            sign = 0;
+always @(*) begin
+    if (exponentDifference>0) begin
+        sign = number1[31];
+        exponent = number1[30:23];
+        
+    end
+
+    else if (exponentDifference<0) begin
+        sign = number2[31];
+        exponent = number2[30:23];
+    end
+
+    else if (exponentDifference==0) begin
+        if (number2[22:0] > number1[22:0]) begin
+            sign = number2[31];
+            exponent = number2[30:23];
         end
 
-        else if (exponentDifference<0) begin
-            sign = 1;
-        end
-
-        else if (exponentDifference==0) begin
-            if (number2[22:0] > number1[22:0]) begin
-                sign = 0;
-            end
-
-            else begin
-                sign = 1;
-            end
+        else begin
+            sign = number1[31];
+            exponent = number1[30:23];
         end
     end
 
-    else begin
-        sign = 0;
-    end
-    end
+end
+    // else begin
+    //     sign = number1[31];
+    //     if (exponentDifference>0) begin
+    //         exponent = number1[30:23];
+    //     end
+
+    //     else if (exponentDifference<0) begin
+    //         exponent = number2[30:23];
+    //     end
+
+    //     else if (exponentDifference==0) begin
+    //         if (number2[22:0] > number1[22:0]) begin
+    //             exponent = number2[30:23];
+    //         end
+
+    //         else begin
+    //             exponent = number1[30:23];
+    //         end
+    //     end
+        
+    // end
+    // end
     always @(*) begin
         if (exponentDifference > 0) begin
             reg1 = {1'b1, number1[22:0]};
@@ -53,7 +76,7 @@ module IEEE_adder (number1, number2, op, result);
 
         else if (exponentDifference < 0) begin
             reg1 = {1'b1, number2[22:0]};
-            reg2 = {1'b1, number1[22:0]} >> exponentDifference;     
+            reg2 = {1'b1, number1[22:0]} >> -exponentDifference;     
             
         end
 
@@ -69,16 +92,7 @@ module IEEE_adder (number1, number2, op, result);
         end
     end
 
-    //     if (~(number2[31] ^ op)) begin
-    //         reg2_ = reg1; 
-    //         reg1_ = reg2;
-    //     end
 
-    //     else begin
-    //         reg1_ = reg1;
-    //         reg2_ = reg2;
-    //     end
-    // end
 
     AdderSubtractor_24bit BigALU (
         .reg1(reg1), 
@@ -96,7 +110,7 @@ module IEEE_adder (number1, number2, op, result);
         .reg1_(reg3)
     );
 
-    assign result = {sign, exponentDifference + incr + 127 ,reg3[22:0]};
+    assign result = {sign, exponent + incr ,reg3[22:0]};
 
     
 endmodule

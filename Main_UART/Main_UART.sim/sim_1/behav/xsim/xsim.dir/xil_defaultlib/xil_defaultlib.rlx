@@ -1,9 +1,0 @@
-0.7
-2020.2
-May 22 2024
-19:03:11
-C:/Users/pasir/Desktop/FPGA_Projects/Main_UART/Main_UART.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,uvm,,,,,,
-C:/Users/pasir/Desktop/Github/AnalogComputer/UART/uart_main.sv,1720154723,systemVerilog,,C:/Users/pasir/Desktop/Github/AnalogComputer/UART/uart_rx.sv,,uart_main,,uvm,,,,,,
-C:/Users/pasir/Desktop/Github/AnalogComputer/UART/uart_main_tb.sv,1720117488,systemVerilog,,,,uart_main_tb,,uvm,,,,,,
-C:/Users/pasir/Desktop/Github/AnalogComputer/UART/uart_rx.sv,1719993259,systemVerilog,,C:/Users/pasir/Desktop/Github/AnalogComputer/UART/uart_tx.sv,,uart_rx,,uvm,,,,,,
-C:/Users/pasir/Desktop/Github/AnalogComputer/UART/uart_tx.sv,1719993259,systemVerilog,,C:/Users/pasir/Desktop/Github/AnalogComputer/UART/uart_main_tb.sv,,uart_tx,,uvm,,,,,,

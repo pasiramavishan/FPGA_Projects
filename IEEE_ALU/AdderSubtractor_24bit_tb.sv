@@ -15,33 +15,33 @@ module AdderSubtractor_24bit_tb ();
     AdderSubtractor_24bit dut (.*);
 
     initial begin
-        reg1 <= 24'd30;
-        reg2 <= 24'd10;
+        reg1 <= 24'b011001010001011001010010;
+        reg2 <= 24'b110010000111011111001111;
         op <= 0;
 
-        @(posedge clk);
-        reg1 <= 24'd10;
-        reg2 <= 24'd20;
-        op <= 0;
+//        @(posedge clk);
+//        reg1 <= 24'd10;
+//        reg2 <= 24'd20;
+//        op <= 0;
 
-        @(posedge clk);
-        reg1 <= 24'd5;
-        reg2 <= 24'd10;
-        op <= 1;
+//        @(posedge clk);
+//        reg1 <= 24'd5;
+//        reg2 <= 24'd10;
+//        op <= 1;
 
-        @(posedge clk);
-        reg1 <= 24'd30;
-        reg2 <= 24'd10;
-        op <= 0;   
+//        @(posedge clk);
+//        reg1 <= 24'd30;
+//        reg2 <= 24'd10;
+//        op <= 0;   
 
-        @(posedge clk);
-        reg1 <= 24'd5;
-        reg2 <= 24'd10;
-        op <= 1;
+//        @(posedge clk);
+//        reg1 <= 24'd5;
+//        reg2 <= 24'd10;
+//        op <= 1;
 
-        @(posedge clk);
-        reg1 <= 24'd30;
-        reg2 <= 24'd10;
-        op <= 1;
+//        @(posedge clk);
+//        reg1 <= 24'd30;
+//        reg2 <= 24'd10;
+//        op <= 1;
     end
 endmodule

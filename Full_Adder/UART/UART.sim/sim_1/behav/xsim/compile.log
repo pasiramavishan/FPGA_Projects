@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/UART/Src/uart_tx.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/pasir/Desktop/FPGA_Projects/Full_Adder/UART/Src/uart_tx_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx_tb
