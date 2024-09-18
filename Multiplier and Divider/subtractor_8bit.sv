@@ -1,4 +1,4 @@
-module subtractor_8bit (reg1, reg2, result);
+module subtractor_8bit(reg1, reg2, result);
     input [7:0] reg1, reg2;
     output [7:0] result;
 

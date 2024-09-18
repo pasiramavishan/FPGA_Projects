@@ -1,17 +1,18 @@
-module subtractor_8bit (reg1, reg2, result);
-    input [7:0] reg1, reg2;
-    output [7:0] result;
-
-    wire op = 1;
+module Adder_8bit(
+    input [7:0] reg1, reg2,
+    output [7:0] result,
+    output cout
+);
+    reg op = 0;
     
-    wire [8:0] c;
+    reg [8:0] c;
 
     assign c[0] = op;
 
     genvar i;
     
     for (i = 0; i < 8; i = i + 1) begin
-        AdderSubtractor addSub(
+        AdderSubtractor Adder_8bit(
             .A(reg1[i]),
             .B(reg2[i]),
             .result(result[i]),

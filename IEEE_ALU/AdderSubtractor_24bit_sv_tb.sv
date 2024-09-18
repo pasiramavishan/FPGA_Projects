@@ -1,6 +1,6 @@
-module AdderSubtractor_24bit (reg1, reg2, result, op, cout);
-    input [23:0] reg1, reg2;
-    input op;
+module AdderSubtractor_24bit_sv_tb (reg1, reg2, result, op, cout);
+    logic [23:0] reg1, reg2;
+    logic op;
     output [23:0] result;
     output cout;
 
