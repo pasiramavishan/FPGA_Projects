@@ -1,6 +1,7 @@
 
 ## Video Demonstration
 
-You can watch the video demonstration of the sequence detector below:
+You can watch the video demonstration of the digital Clock below:
 
-![Video](https://github.com/pasiramavishan/myImages/blob/main/digitalClock.mp4?raw=true)
+https://github.com/user-attachments/assets/a5998cdd-40e6-4242-a630-2625bbc5c260
+
