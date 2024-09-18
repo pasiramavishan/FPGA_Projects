@@ -30,7 +30,7 @@ The add-shift method breaks down the multiplication of two numbers into a series
 5. **Sign Calculation**: Determine the sign of the result based on the signs of the input numbers.
 6. **Final Rounding**: Round the mantissa to fit into the 23-bit IEEE 754 format.
 
-Here is a block diagram of the floating-point adder-subtractor:
+Here is a block diagram of the floating-point Multiplier:
 
 ![Adder-Subtractor Diagram](https://github.com/pasiramavishan/myImages/blob/main/Multiplier.png)
 
