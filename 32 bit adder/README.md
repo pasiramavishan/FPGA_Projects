@@ -31,7 +31,7 @@ Imagine you need to add 4 pairs of 32 bit numbers.
       <td>
         <img src="https://github.com/pasiramavishan/myImages/blob/main/parallel%20adder.png" width="500px" />
         <br>
-        <center>Parallel Adderr</center>
+        <center>Parallel Adder</center>
       </td>
       <td>
         <img src="https://github.com/pasiramavishan/myImages/blob/main/prallel%20adder.png" width="500px" />
