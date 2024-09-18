@@ -53,6 +53,6 @@
         <li>Performance optimization for hardware implementation.</li>
         <li>Support for multiply-add operations.</li>
     </ul>
-<img src="https://github.com/pasiramavishan/myImages/blob/main/IEEE%20format.jpg" alt="Alt text" title="Optional title" width="500">
+<img src="https://github.com/pasiramavishan/myImages/blob/main/Block%20Diagram.jpeg" alt="Alt text" title="Optional title" width="500">
 </body>
 </html>
