@@ -11,3 +11,13 @@ Imagine you need to add 4 pairs of 32 bit numbers.
   <img src="https://github.com/pasiramavishan/myImages/blob/main/serial%20adder.jpeg" width="45%" />
   <img src="https://github.com/pasiramavishan/myImages/blob/main/parallel%20adder.png" width="45%" />
 </p>
+<p align="center">
+  <figure>
+    <img src="https://github.com/pasiramavishan/myImages/blob/main/serial%20adder.jpeg" width="45%" />
+    <figcaption>Serial adder</figcaption>
+  </figure>
+  <figure>
+    <img src="https://github.com/pasiramavishan/myImages/blob/main/parallel%20adder.png" width="65%" />
+    <figcaption>Parallel Adder</figcaption>
+  </figure>
+</p>
