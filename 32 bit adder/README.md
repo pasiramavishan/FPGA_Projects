@@ -12,12 +12,12 @@ Imagine you need to add 4 pairs of 32 bit numbers.
   <table>
     <tr>
       <td>
-        <img src="https://github.com/pasiramavishan/myImages/blob/main/serial%20adder.jpeg" width="300px" />
+        <img src="https://github.com/pasiramavishan/myImages/blob/main/serial%20adder.jpeg" width="500px" />
         <br>
         <center>Serial adder</center>
       </td>
       <td>
-        <img src="https://github.com/pasiramavishan/myImages/blob/main/serial%20adder%20diagram.jpeg.png" width="300px" />
+        <img src="https://github.com/pasiramavishan/myImages/blob/main/serial%20adder%20diagram.jpeg.png" width="500px" />
         <br>
         <center>Two Clock cycles for one addition</center>
       </td>
@@ -29,14 +29,14 @@ Imagine you need to add 4 pairs of 32 bit numbers.
   <table>
     <tr>
       <td>
-        <img src="https://github.com/pasiramavishan/myImages/blob/main/parallel%20adder.png" width="300px" />
+        <img src="https://github.com/pasiramavishan/myImages/blob/main/parallel%20adder.png" width="500px" />
         <br>
-        <center>Serial adder</center>
+        <center>Parallel Adderr</center>
       </td>
       <td>
-        <img src="https://github.com/pasiramavishan/myImages/blob/main/prallel%20adder.png" width="300px" />
+        <img src="https://github.com/pasiramavishan/myImages/blob/main/prallel%20adder.png" width="500px" />
         <br>
-        <center>Two Clock cycles for one addition</center>
+        <center>six clock cycles for 4 additions</center>
       </td>
     </tr>
   </table>
