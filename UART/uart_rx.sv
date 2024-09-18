@@ -23,14 +23,14 @@
 module uart_rx #(
     parameter CLOCKS_PER_PULSE = 16,
               BITS_PER_WORD = 8,
-              W_OUT 
+              W_OUT = 16
 )(
     input logic clk, rstn, rx,
     output logic m_valid,
     output logic [W_OUT-1:0] m_data
 );
     localparam NUM_WORDS = W_OUT / BITS_PER_WORD;
-    enum {IDLE, START, DATA, PARITY, END} state;
+    enum {IDLE, START, DATA, PARITY, END_STATE } state;
 
     //counters
     logic [$clog2(CLOCKS_PER_PULSE)-1:0] c_clocks;
@@ -79,19 +79,19 @@ module uart_rx #(
                         c_clocks <= 0;
                         xor_parity = ^m_data[BITS_PER_WORD +: BITS_PER_WORD];
                         if (rx == xor_parity) begin
-                            state <= END;
+                            state <= END_STATE;
                         end else 
                             state <= IDLE; 
                     end else 
                         c_clocks <= c_clocks + 1;    
 
-
-                END:    
+                END_STATE :     
                     if (c_clocks == CLOCKS_PER_PULSE-1) begin
                         state <= IDLE;
                         c_clocks <= 0;
                     end else
-                        c_clocks <= c_clocks + 1;        
+                        c_clocks <= c_clocks + 1;       
+                
             endcase
         end
     end
