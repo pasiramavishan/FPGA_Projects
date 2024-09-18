@@ -7,3 +7,7 @@ Imagine you need to add 4 pairs of 32 bit numbers.
 
 
  This Exercise it to showcase the power of parallelism. By doing this I observed that it took 6 clock cycles for parallel adder and 8 clock cycles for serial adder.
+<p align="center">
+  <img src="https://github.com/pasiramavishan/myImages/blob/main/serial%20adder.jpeg" width="45%" />
+  <img src="https://github.com/pasiramavishan/myImages/blob/main/parallel%20adder.png" width="45%" />
+</p>
