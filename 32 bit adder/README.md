@@ -28,3 +28,20 @@ Imagine you need to add 4 pairs of 32 bit numbers.
     <figcaption>Takes only 6 clock cycles</figcaption>
   </figure>
 </p>
+
+<p align="center">
+  <table>
+    <tr>
+      <td>
+        <img src="https://github.com/pasiramavishan/myImages/blob/main/serial%20adder.jpeg" width="300px" />
+        <br>
+        <center>Serial adder</center>
+      </td>
+      <td>
+        <img src="https://github.com/pasiramavishan/myImages/blob/main/serial%20adder%20diagram.jpeg.png" width="300px" />
+        <br>
+        <center>Two Clock cycles for one addition</center>
+      </td>
+    </tr>
+  </table>
+</p>
