@@ -34,3 +34,13 @@ Here is a block diagram of the floating-point Multiplier:
 
 ![Adder-Subtractor Diagram](https://github.com/pasiramavishan/myImages/blob/main/Multiplier.png)
 
+##Timing Analysis
+
+![Adder-Subtractor Diagram](https://github.com/pasiramavishan/myImages/blob/main/IEEE%20multiplier%201.png)
+
+![Adder-Subtractor Diagram](https://github.com/pasiramavishan/myImages/blob/main/IEEE%20multiplier%202.png)
+
+
+## FPGA Implementation
+![Adder-Subtractor Diagram](https://github.com/pasiramavishan/myImages/blob/main/IEEE%20multiplier%203.png.jpg)
+
