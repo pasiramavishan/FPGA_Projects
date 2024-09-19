@@ -67,9 +67,7 @@
 
 
 <h1>FPGA Implmentation</h1>
-<img src="https://github.com/pasiramavishan/myImages/blob/main/IEEE%20adder%202.png" alt="Alt text" title="Optional title" width="500">
 
-<img src="https://github.com/pasiramavishan/myImages/blob/main/IEEE%20adder.png" alt="Alt text" title="Optional title" width="500">
 
 <div style="display: flex;">
     <img src="https://github.com/pasiramavishan/myImages/blob/main/ieee%20aadder3.jpg" alt="Image 1" style="width: 45%; margin-right: 10px;">
