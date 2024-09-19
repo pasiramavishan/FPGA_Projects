@@ -57,9 +57,16 @@
 </body>
 </html>
 
-<img src="https://github.com/pasiramavishan/myImages/blob/main/IEEE%20adder%202.png" alt="Alt text" title="Optional title" width="500">
+<h1>Testing Timing Analysis</h1>
+
 
 <img src="https://github.com/pasiramavishan/myImages/blob/main/IEEE%20adder.png" alt="Alt text" title="Optional title" width="500">
+
+
+<img src="https://github.com/pasiramavishan/myImages/blob/main/IEEE%20adder%202.png" alt="Alt text" title="Optional title" width="500">
+
+
+<h1>FPGA Implmentation</h1>
 
 <img src="https://github.com/pasiramavishan/myImages/blob/main/ieee%20aadder3.jpg" alt="Alt text" title="Optional title" width="500">
 
