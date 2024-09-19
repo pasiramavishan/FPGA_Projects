@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IEEE 754 Floating-Point Adder-Subtractor</title>
+<!--     <title>IEEE 754 Floating-Point Adder-Subtractor</title> -->
 </head>
 <body>
     <h1>IEEE 754 Floating-Point Adder-Subtractor</h1>
