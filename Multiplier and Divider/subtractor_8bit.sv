@@ -22,6 +22,6 @@ module subtractor_8bit(reg1, reg2, result);
     end
 
 
-    assign cout = c[8];
+//    assign cout = c[8];
     
 endmodule

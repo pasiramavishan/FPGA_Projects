@@ -5,7 +5,7 @@ module Adder_8bit (
     output logic cout
 );
 
-    logic [24:0] c;
+    logic [8:0] c;
     
     assign c[0] = 1'b0;
 
@@ -25,7 +25,7 @@ module Adder_8bit (
         end
     endgenerate
     
-    assign cout = c[24];
+    assign cout = c[8];
     
 
 endmodule
