@@ -25,5 +25,6 @@ The divider operates in four states:
 
 ## Simulations and Results
 
-<img width="944" alt="Screenshot 2024-09-30 202511" src="https://github.com/user-attachments/assets/5296c7fd-d624-484e-a9e0-8170a9414f47">
+<img width="947" alt="Screenshot 2024-09-30 215213" src="https://github.com/user-attachments/assets/4a02deb7-b5f2-48a4-8b57-9a0cbe64ae08">
+
 
