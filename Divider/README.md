@@ -1,4 +1,4 @@
-#24-bit Divider (SystemVerilog)
+# 24-bit Divider (SystemVerilog)
 
 ## Overview
 
