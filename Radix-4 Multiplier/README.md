@@ -17,3 +17,7 @@ This repository contains the implementation of a radix-4 multiplier written in S
 The radix-4 Booth multiplier works by encoding groups of bits from num2 and shifting the partial products of num1 accordingly. Depending on the 3-bit group of num2, specific values of num1 are added or subtracted to form the final result.
 
 ![Radix-4-booth-recoding](https://github.com/user-attachments/assets/5ed7985c-3317-47d5-88fc-2b6deaaf74e4)
+
+### External Modules
+
+This module uses an AdderSubtractor_Nbit submodule to handle addition and subtraction of the partial products. The result of each stage is stored and shifted as needed to accumulate the final product.
