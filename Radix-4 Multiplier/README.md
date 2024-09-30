@@ -35,4 +35,10 @@ radix4 #(.N(24)) radix4_multiplier (
     .rstn(rstn),        // Active-low reset
     .FinalResult(FinalResult)  // Output result
 );
+```
+
+## Simulations and Timing Analysis
+
+<img width="944" alt="Screenshot 2024-09-30 202511" src="https://github.com/user-attachments/assets/47c67fb5-5a3b-4e68-ac8f-373ef51a57aa">
+
 
