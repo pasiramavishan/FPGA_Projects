@@ -21,3 +21,18 @@ The radix-4 Booth multiplier works by encoding groups of bits from num2 and shif
 ### External Modules
 
 This module uses an AdderSubtractor_Nbit submodule to handle addition and subtraction of the partial products. The result of each stage is stored and shifted as needed to accumulate the final product.
+
+
+## Example Instantiation
+
+To instantiate the `radix4` module in your SystemVerilog design, you can use the following code:
+
+```verilog
+radix4 #(.N(24)) radix4_multiplier (
+    .num1(num1),        // First input number
+    .num2(num2),        // Second input number
+    .clk(clk),          // Clock signal
+    .rstn(rstn),        // Active-low reset
+    .FinalResult(FinalResult)  // Output result
+);
+
