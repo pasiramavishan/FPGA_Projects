@@ -1,28 +1,31 @@
-module Adder_8bit(
-    input [7:0] reg1, reg2,
-    output [7:0] result,
-    output cout
+module Adder_8bit (
+    input logic [7:0]  numberA,
+    input logic [7:0] numberB,
+    output logic [7:0] result,
+    output logic cout
 );
-    reg op = 0;
-    
-    reg [8:0] c;
 
-    assign c[0] = op;
+    logic [8:0] c;
+    
+    assign c[0] = 1'b0;
 
     genvar i;
+
     
-    for (i = 0; i < 8; i = i + 1) begin
-        AdderSubtractor Adder_8bit(
-            .A(reg1[i]),
-            .B(reg2[i]),
-            .result(result[i]),
-            .op(op),
-            .cin(c[i]),
-            .cout(c[i+1])
-        );
-    end
-
-
+    generate
+        for (i = 0; i < 8; i = i + 1) begin : adder_gen
+            AdderSubtractor adder_sv(
+                .A(numberA[i]),
+                .B(numberB[i]),
+                .op(1'b0),
+                .cin(c[i]),
+                .result(result[i]),
+                .cout(c[i+1])
+            );
+        end
+    endgenerate
+    
     assign cout = c[8];
     
+
 endmodule
