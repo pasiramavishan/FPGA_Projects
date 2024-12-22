@@ -9,7 +9,9 @@ module IEEE_adder (
     logic [23:0] intermediate, reg3;
     logic sign;
     logic [7:0] incr;
-    logic [23:0] reg1, reg2; 
+    // logic [23:0] reg1, reg2;
+    logic [24:0] reg1, reg2;
+
     logic cout, cout1;
     logic op_;
 

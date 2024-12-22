@@ -1,17 +1,19 @@
 module FloatingPointUnit (
-    input logic clk, rstn, rstn_number, enter,
-    input logic [2:0] partition,
+    input logic clk, rstn, Rx,
+    // input logic enter, rstn_number,
+	 // input logic [2:0] partition,
     input logic [1:0] operation,
-    input logic [7:0] number,
+    // input logic [7:0] number,
     // output logic [31:0] result,
-	 output logic [6:0] seg_out1, seg_out2, seg_out3, seg_out4, seg_out5, seg_out6, seg_out7, seg_out8 
+	output logic [6:0] seg_out1, seg_out2, seg_out3, seg_out4, seg_out5, seg_out6, seg_out7, seg_out8 
 );
-
+	
+	 wire Rxclk_en, Txclk_en, ready; 
     logic [31:0] result_adder, result_mult, result_div, result_subtractor, number1, number2;
 	 logic [23:0] remainder;
 	 logic [31:0] result;
 
-    inputNumber takingInput(
+  /*  inputNumber takingInput(
         .number(number),
         .clk(clk), 
         .rstn(rstn_number), 
@@ -19,7 +21,25 @@ module FloatingPointUnit (
         .partition(partition),
         .num1(number1), 
         .num2(number2) 
+    ); */
+	 
+    // Receiver module instance
+    receiver Receiver (
+        .Rx(Rx),
+        .ready(ready),          // 1-bit output
+        .clk_50m(clk),      
+        .clken(Rxclk_en),
+        .data_out1(number1),
+		  .data_out2(number2)		  // 32-bit output
     );
+
+    // Baudrate generator instance
+    baudrate Baudrate (
+        .clk_50m(clk),
+        .Rxclk_en(Rxclk_en),
+        .Txclk_en(Txclk_en)
+    );
+	 
 	 
     always_ff @( posedge clk or negedge rstn ) begin : main
         

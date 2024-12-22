@@ -1,4 +1,4 @@
-module test_tb ();
+/* module test_tb ();
 
 
     logic clk, rstn=0, rstn_number=0, enter;
@@ -110,7 +110,7 @@ module test_tb ();
 		  // rstn <= 1;
     end
     
-   /* task check_output;
+   task check_output;
         input [31:0] actual;
         input [31:0] expected;
         if (actual !== expected) begin
@@ -118,7 +118,8 @@ module test_tb ();
         end else begin
             $display("Test Passed: Output %h matches expected %h", actual, expected);
         end
-    endtask */
+    endtask 
 
-endmodule
+endmodule 
 
+*/
