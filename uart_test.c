@@ -193,14 +193,18 @@ void receive_data(int fd) {
     sleep(5);
     ssize_t len = read(fd, buffer, 4); // Read 4 bytes (32-bit data)
     if (len == 4) {
-        uint32_t value = (buffer[0] << 24) |
-                         (buffer[1] << 16) |
-                         (buffer[2] << 8) |
-                         buffer[3];
-        printf("Received processed data: 0x%08X\n", value);
+        uint32_t value = (buffer[3] << 24) |
+                         (buffer[2] << 16) |
+                         (buffer[1] << 8) |
+                         buffer[0];
+
+       printf("Received 32-bit value (Decimal): %u\n", value);
+       printf("Received 32-bit value (Hexadecimal): 0x%08X\n", value);
+       printf("Received 32-bit value (Binary): ");
+       print_binary(value);
     } else if (len > 0) {
         printf("Partial data received (%zd bytes). Waiting for more...\n", len);
-	            received_value = (buffer[0] & 0xFF) | 
+	        uint32_t received_value = (buffer[0] & 0xFF) | 
                              ((buffer[1] & 0xFF) << 8) | 
                              ((buffer[2] & 0xFF) << 16) | 
                              ((buffer[3] & 0xFF) << 24);
@@ -232,4 +236,3 @@ int main() {
     return 0;
 }
 
-https://www.youtube.com/watch?v=SI_T_jxdr-Q
